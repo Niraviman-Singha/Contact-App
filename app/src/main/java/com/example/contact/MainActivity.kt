@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
         if(firstName.isNotEmpty() && lastName.isNotEmpty() && rollNo.isNotEmpty()){
             val contact = Contact(null, firstName, lastName, rollNo.toInt())
             GlobalScope.launch (Dispatchers.IO ){
-                contactDatabase.studentDao().insert(contact)
+                contactDatabase.ContactDao().insert(contact)
             }
             binding.nameET.text?.clear()
             binding.emailET.text?.clear()
