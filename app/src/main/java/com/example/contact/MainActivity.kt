@@ -28,9 +28,6 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-
-
-
     @OptIn(DelicateCoroutinesApi::class)
     private fun saveData() {
         val firstName = binding.nameET.text.toString()
